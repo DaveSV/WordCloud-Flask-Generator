@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WordCloud Generator</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicons -->
+    <link href="{{ url_for('static', filename='img/shivang-img.jpg') }}" rel="icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700|Philosopher:400,400i,700,700i" rel="stylesheet">
+
+    <!-- Bootstrap css -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+    <link href="{{ url_for('static', filename='lib/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="{{ url_for('static', filename='lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='lib/owlcarousel/assets/owl.theme.default.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='lib/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='lib/animate/animate.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='lib/modal-video/css/modal-video.min.css') }}" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+
+    <style>
+        .new {
+            padding-top:20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 30%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="header" class="header header-hide">
+        <div class="container">
+
+            <div id="logo" class="pull-left">
+                <h1><a href="{{ url_for('index') }}" class="scrollto"><span>wc</span>Generator</a></h1>
+            </div>
+
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li><a href="{{ url_for('index') }}">Home</a></li>
+                    <li class="menu-active"><a href="{{ url_for('blog') }}">Blog</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                </ul>
+            </nav><!-- #nav-menu-container -->
+        </div>
+    </header>
+    
+    <section id="hero" class="wow fadeIn">
+        <div class="new">
+            <h2><b>What Is a Word Cloud?</b></h2>
+            <p>
+                A word cloud (also known as a tag cloud) is a visual representation of words. Cloud creators are used to highlight popular words and phrases based on frequency and relevance. They provide you with quick and simple visual insights that can lead to more in-depth analyses.
+            </p>
+            <p>
+                For example, with our algorithm you can define a serch using the significant phrase "Computer programming" and the text will be taken from the relative page from Wikipedia (<a href="https://en.wikipedia.org/wiki/Computer_programming" target="_blank">https://en.wikipedia.org/wiki/Computer_programming</a>)
+            </p>
+            <p>
+                The result would be the following:
+            </p>
+            <div align="center">
+            <img src="{{ url_for('static', filename='img/wordcloud_blog.png') }}" width="100%">
+            </div>
+            <h2><b>WordCloud Generator</b></h2>
+            <p>
+                This is a WordCloud Generator built using Python libraries such as Flask and Wordcloud.
+                The deployment of this Flask is completely done using our own web servers. We offer a cloud platform that allows programmers to create free account and deploy their machine learning or data science models on web application.<br>
+                Entire working of the project is available on my Github profile. Visit the profile using the contacts provided. Connect with me for collaboration or any doubts.
+            </p>
+           
+            <h2><b>Wikipedia</b></h2>
+            <p>
+                <a href="https://www.wikipedia.org/" target="_blank">Wikipedia</a> is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation.
+            </p>
+            <h2><b>Algorithm</b></h2>
+            <p>
+                The set of textual data (words) is obtained from the search for pages on Wikipedia, taking as title value the text entered in the Word Cloud creation form. In this way, an intelligent search is carried out on specific concepts such as personal names, geographical or historical information, trades and techniques, plastic or literary arts, etc.
+            </p>
+            
+            <h2><b>Blog</b></h2>
+            <p>Word cloud generators are an excellent way to simplify and present qualitative data. They make data easier to understand and help you gain insights from text data in the blink of an eye.
+            </p>
+            <p>
+            If you want to know more about development content and web programming you can visit my personal blog:
+            <a href="https://albertosaenz.com/blog/" target="_blank"> Novedades Tecnológicas, por Alberto Sáenz</a></p>
+
+
+        </div>
+    </section><!-- #hero -->
+    <!-- JavaScript Libraries -->
+    <script src="{{ url_for('static', filename='lib/jquery/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/jquery/jquery-migrate.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/superfish/hoverIntent.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/superfish/superfish.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/easing/easing.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/modal-video/js/modal-video.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/owlcarousel/owl.carousel.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/wow/wow.min.js') }}"></script>
+
+</body>
+</html>
